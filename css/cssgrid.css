@@ -1,0 +1,64 @@
+/* Give the sisplay property grid to the container */
+/* display: property; */
+.grid-container {
+    display: grid;
+/* 1. Define rows */
+/* 2. Define what grid area you want to be seen on the row */
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footersection footersection footersection footersection footersection footersection'
+    ;
+}
+
+#navsection {
+    background-color: beige;
+    grid-area: navsection;
+
+}
+
+#bannersection {
+    grid-area: bannersection;
+}
+
+#sidemenua {
+    background-color: red;
+    grid-area: sidemenua;
+}
+
+#sidemenub {
+    background-color: sienna;
+    grid-area: sidemenub;
+}
+#maingallery {
+    background-color: blueviolet;
+    grid-area: maingallery;
+}
+
+#footersection {
+    background-color: teal;
+    grid-area: footersection;
+}
+
+/* When writing a media query, write it at the bottom of your css file */
+@media only screen and (max-width:600px){
+   /* body{
+        background-color: chartreuse;
+    } */
+    .grid-container {
+        display: grid;
+    /* 1. Define rows */
+    /* 2. Define what grid area you want to be seen on the row */
+    grid-template-areas: 
+        'navsection navsection navsection navsection navsection navsection'
+        'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+        'bannersection bannersection bannersection bannersection bannersection bannersection'
+        'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+        'maingallery maingallery maingallery maingallery maingallery maingallery'
+        'footersection footersection footersection footersection footersection footersection'
+        ;
+    }
+}
+
+

@@ -1,0 +1,23 @@
+/* external css */
+
+/* Using element name */
+button {
+    background-color: brown;
+    color: black;
+    border-radius: 10px;
+}
+
+/* class */
+.paraClass {
+    text-decoration-line: overline underline;
+    color: black;
+}
+
+/* id */
+#btnGreen {
+    background-color: green;
+}
+#paraName {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blue;
+}
